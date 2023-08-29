@@ -1,0 +1,10 @@
+name = "do-sample"
+main = "./index.mjs"
+compatibility_date = "2023-08-15"
+
+[durable_objects]
+bindings = [{name = "SAMPLE", class_name = "Sample"}]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Sample"]
